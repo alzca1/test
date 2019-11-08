@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap");
+
+body {
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "Bowlby One SC", cursive;
+  color: black;
+  text-align: center;
+}
+
+img {
+  width: 30%;
+  height: 100%;
+  align-self: center;
+  padding: 2%;
+}
+
+form {
+  margin: 2vh 2vw;
+}
+
+.container-completo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#container-resultados {
+  margin: 0 auto;
+  align-self: center;
+  font-size: 1.5em;
+}
+
+form {
+  width: 30vw;
+  padding-bottom: 2%;
+}
+
+.container-partido {
+  display: flex;
+  width: 30vw;
+  /* border: 1px solid white; */
+  margin: 0 auto;
+}
+
+input {
+  width: 10vw;
+  font-size: 1.5em;
+  color: white;
+  background: inherit;
+  border: none;
+  text-align: center;
+  
+}
+
+input:focus {
+  transform: 1s;
+  border-bottom: 0.5px solid white; 
+  outline: none;
+    
+}
+
+.button {
+  text-decoration: none;
+  color: inherit;
+  /* border: 1px solid white; */
+  padding: 1vw 1.5vw;
+  border-radius: 10px;
+  border: 1px solid white;
+  transition: 1s ease; 
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: black;
+  outline: none;
+}
+
+#btn {
+  text-align: center;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Quiniela Electoral</h1>
+    <div class="container-completo">
+      <div class="container-oficiales">
+        <form onchange="recopilador()">
+          <div class="resultados-psoe container-partido">
+            <img src="./resources/images/psoe_logo.png" />
+            <input
+              id="psoe-of"
+              type="text"
+              pattern="[0-9]"
+              name="PSOE"
+              min="0"
+              max="200"
+              value="0"
+            />
+          </div>
+
+          <div class="resultados-pp container-partido">
+            <img src="resources/images/logo_pp.png" />
+            <input
+              id="pp-of"
+              type="text"
+              pattern="[0-9]"
+              name="PP"
+              min="0"
+              max="200"
+              value="0"
+            />
+          </div>
+
+          <div class="resultados-ciudadanos container-partido">
+            <img src="resources/images/logo_ciudadanos.jpg" />
+            <input
+              id="ciud-of"
+              type="text"
+              pattern="[0-9]"
+              name="CIUDADANOS"
+              min="0"
+              max="200"
+              value="0"
+            />
+          </div>
+
+          <div class="resultados-podemos container-partido">
+            <img src="resources/images/podemos_logo.png" />
+            <input
+              id="pode-of"
+              type="text"
+              pattern="[0-9]"
+              name="PODEMOS"
+              min="0"
+              max="200"
+              value="0"
+            />
+          </div>
+
+          <div class="resultados-vox container-partido">
+            <img src="resources/images/VOX_logo.svg.png" />
+            <input
+              id="vox-of"
+              type="text"
+              pattern="[0-9]"
+              name="VOX"
+              min="0"
+              max="200"
+              value="0"
+            />
+          </div>
+        </form>
+      </div>
+      <div id="container-resultados">
+            <div id="Rodrigo"></div>
+            <div id="Victor"></div>
+            <div id="Álvaro"></div>
+          </div>
+    </div>
+
+    <div id="btn">
+        <a href="#" class="button" onclick="reset()">RESET</a>
+    </div>
+
+    
+
+    <!-- <div class="apuesta-personal">
+      <ul>
+        <li>Rodrigo</li>
+        <li>Victor</li>
+        <li>Álvaro</li>
+      </ul>
+      <h2>Nombre</h2>
+      <img src="" />
+      <h5>PSOE:</h5>
+      <img src="" />
+      <p>escaños</p>
+      <h5>PP:</h5>
+      <img src="" />
+      <p>escaños</p>
+      <h5>Ciudadanos:</h5>
+      <img src="" />
+      <p>escaños</p>
+      <h5>Podemos:</h5>
+      <img src="" />
+      <p>escaños</p>
+      <h5>VOX:</h5>
+      <img src="" />
+      <p>escaños</p>
+    </div> -->
+    <script src="app.js"></script>
+  </body>
+</html>
