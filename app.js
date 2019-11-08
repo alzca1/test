@@ -10,6 +10,7 @@ function recopilador() {
   let partidos = ["psoe-of", "pp-of", "ciud-of", "pode-of", "vox-of"];
   resultados = [];
   for (let i = 0; i < partidos.length; i++) {
+    console.log(typeof document.getElementById(partidos[i].value))
     resultados.push(document.getElementById(partidos[i]).value);
   }
   comparador(resultados, apuestaRodrigo, "Rodrigo");

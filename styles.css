@@ -33,6 +33,8 @@ form {
   margin: 2vh 2vw;
 }
 
+
+
 .container-completo {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -92,4 +94,10 @@ input:focus {
 
 #btn {
   text-align: center;
+}
+
+
+::placeholder{
+  color:rgba(255, 255, 255, 0.39);
+  font-size: 0.65em;
 }
