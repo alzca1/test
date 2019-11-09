@@ -24,8 +24,9 @@
               name="PSOE"
               min="0"
               max="200"
+              step="1"
+              oninput="validity.valid||(value=value.replace(/\D+/g, ''))"
               placeholder="nº dip."
-              
             />
           </div>
 
@@ -38,6 +39,8 @@
               name="PP"
               min="0"
               max="200"
+              step="1"
+              oninput="validity.valid||(value=value.replace(/\D+/g, ''))"
               placeholder="nº dip."
             />
           </div>
@@ -51,6 +54,8 @@
               name="CIUDADANOS"
               min="0"
               max="200"
+              step="1"
+              oninput="validity.valid||(value=value.replace(/\D+/g, ''))"
               placeholder="nº dip."
             />
           </div>
@@ -64,6 +69,8 @@
               name="PODEMOS"
               min="0"
               max="200"
+              step="1"
+              oninput="validity.valid||(value=value.replace(/\D+/g, ''))"
               placeholder="nº dip."
             />
           </div>
@@ -77,48 +84,28 @@
               name="VOX"
               min="0"
               max="200"
+              step="1"
+              oninput="validity.valid||(value=value.replace(/\D+/g, ''))"
               placeholder="nº dip."
             />
           </div>
         </form>
+        <div id="btn">
+          <a href="#" class="button" onclick="reset()">RESET</a>
+        </div>
       </div>
-      <div id="container-resultados">
-            <div id="Rodrigo"></div>
-            <div id="Victor"></div>
-            <div id="Álvaro"></div>
-          </div>
+      <div class="grid-resultados">
+          <div id="container-resultados">
+              <div id="Rodrigo"></div>
+              <div id="Victor"></div>
+              <div id="Álvaro"></div>
+            </div>
+      </div>
+        
+        
+      </div>
     </div>
 
-    <div id="btn">
-        <a href="#" class="button" onclick="reset()">RESET</a>
-    </div>
-
-    
-
-    <!-- <div class="apuesta-personal">
-      <ul>
-        <li>Rodrigo</li>
-        <li>Victor</li>
-        <li>Álvaro</li>
-      </ul>
-      <h2>Nombre</h2>
-      <img src="" />
-      <h5>PSOE:</h5>
-      <img src="" />
-      <p>escaños</p>
-      <h5>PP:</h5>
-      <img src="" />
-      <p>escaños</p>
-      <h5>Ciudadanos:</h5>
-      <img src="" />
-      <p>escaños</p>
-      <h5>Podemos:</h5>
-      <img src="" />
-      <p>escaños</p>
-      <h5>VOX:</h5>
-      <img src="" />
-      <p>escaños</p>
-    </div> -->
     <script src="app.js"></script>
   </body>
 </html>
