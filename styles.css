@@ -22,7 +22,7 @@ h1 {
   text-align: center;
 }
 
-img {
+.container-completo img {
   width: 30%;
   height: 70%;
   align-self: center;
@@ -98,10 +98,47 @@ input:focus {
 }
 
 #btn {
+margin-top: 2vw; 
  margin-left: 3vw;
+ display: grid; 
+ grid-template-columns: repeat(2,1fr);
+ width: 60%;
+ height: 10%;
+ column-gap: 1.5vw;
 }
 
 ::placeholder {
   color: rgba(255, 255, 255, 0.39);
   font-size: 0.65em;
 }
+
+.grid{
+  display: grid; 
+  grid-template-columns: repeat(5, 0.2fr);
+  grid-template-rows: 1fr;
+  width: 70%;
+}
+
+
+.container-pronostico{
+  
+  width: 70%;
+  margin: 0 auto;
+  padding: 2vw;
+  position: fixed;
+  border-radius: 20px;
+  bottom: 15%;
+  left: 35%;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.15);
+}
+
+
+
+.visibility {
+  display: none; 
+}
+
+
+
+

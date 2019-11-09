@@ -47,3 +47,11 @@ function reset() {
       }
 }
 
+
+
+function display(){
+  var pronostico = document.querySelector('.container-pronostico');
+  var resultados = document.getElementById('resultados')
+  pronostico.classList.toggle('visibility');
+  resultados.classList.toggle('visibility');
+}
